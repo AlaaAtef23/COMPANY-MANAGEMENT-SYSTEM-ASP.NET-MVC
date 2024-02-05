@@ -1,0 +1,17 @@
+﻿@model DepartmentVeiwModel
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Code"></label>
+    <input asp-for="Code" class="form-control" />  @* asp-for="Code" ==> insted of { type="text" name="Code" id="code" } it will knows it from it self *@
+    <span asp-validation-for="Code" class="text-danger"></span> @* Message of the error *@
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="Name"></label>
+    <input asp-for="Name" class="form-control" />  @* asp-for="Name" ==> insted of { type="text" name="Code" id="code" } it will knows it from it self *@
+    <span asp-validation-for="Name" class="text-danger"></span> @* Message of the error *@
+</div>
+<div class="form-group">
+    <label class="col-form-label" asp-for="DateOfCreation"></label>
+    <input asp-for="DateOfCreation" class="form-control" />  @* asp-for="Code" ==> insted of { type="text" name="Code" id="code" } it will knows it from it self *@
+    <span asp-validation-for="DateOfCreation" class="text-danger"></span> @* Message of the error *@
+</div>
